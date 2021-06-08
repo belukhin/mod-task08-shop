@@ -1,13 +1,21 @@
 cmake_minimum_required (VERSION 3.10.2)
-project (mod-task08-shop)
-
+project (mod-task08-shop)#
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -g")
-
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -g")#
 
 set(tool_dest "bin")
 set(lib_dest "lib")
-set(include_dest "include/")
-
+set(include_dest "include/")#
 add_subdirectory(src)
 add_subdirectory(test)
+
+
+#cmake_minimum_required(VERSION 3.5)
+#
+#project (Shop)
+#
+#set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+#
+#file(GLOB CPP_SOURCES "src/*.cpp")
+#
+#add_executable(${PROJECT_NAME} ${CPP_SOURCES})
